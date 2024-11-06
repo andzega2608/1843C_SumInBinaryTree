@@ -31,7 +31,7 @@ public:
 // Constructor por default
 template <class T>
 TreeNode<T>::TreeNode(T val) : value(val), left(0), right(0) {}
-// Constructor por par�metros
+// Constructor por parámetros
 template <class T>
 TreeNode<T>::TreeNode(T val, TreeNode<T> *le, TreeNode<T> *ri)
 	: value(val), left(le), right(ri) {}

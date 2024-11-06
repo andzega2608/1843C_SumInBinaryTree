@@ -1,5 +1,5 @@
 /*
-* Nombre: Andr�s Ignacio Zegales Taborga
+* Nombre: Andrés Ignacio Zegales Taborga
 * Fecha: 24/10/2024
 * Tema: Sum In Binary Tree 1843C - Codeforces
 */

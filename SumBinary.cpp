@@ -18,7 +18,6 @@ private:
 	T value;
 	TreeNode *left, *right;
 	TreeNode<T>* succesor();
-
 public:
 	TreeNode(T);
 	TreeNode(T, TreeNode<T>*, TreeNode<T>*);
@@ -69,7 +68,7 @@ void TreeNode<T>::add(T val) {
 /*
 * find(T val)
 *
-* Busca dentro del arbol y revisa la ubicacion donde est� ese nodo
+* Busca dentro del arbol y revisa la ubicacion donde está ese nodo
 *
 * param T val
 * return true o false
@@ -161,7 +160,7 @@ bool BST<T>::empty() const {
 /*
 * add(T val)
 *
-* A�ade el valor en el lugar correspondiente
+* Anade el valor en el lugar correspondiente
 *
 * param T val
 * @return

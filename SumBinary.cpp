@@ -91,7 +91,7 @@ bool TreeNode<T>::find(T val) {
 * sumTot(T num)
 *
 * Realiza de manera recursiva la suma acumulada
-* dentro del �rbol
+* dentro del árbol
 *
 * param T val
 * return suma acumulada
@@ -107,6 +107,7 @@ long long TreeNode<T>::sumTot(T num) {
     if (right != nullptr && right->find(num)) {
         return value + right->sumTot(num);
     }
+    return 0;
 }
 /*
 * removeChilds()

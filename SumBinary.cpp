@@ -1,5 +1,5 @@
 /*
-* Nombre: Andrés Ignacio Zegales Taborga
+* Nombre: Andrï¿½s Ignacio Zegales Taborga
 * Fecha: 24/10/2024
 * Tema: Sum In Binary Tree 1843C - Codeforces
 */
@@ -31,7 +31,7 @@ public:
 // Constructor por default
 template <class T>
 TreeNode<T>::TreeNode(T val) : value(val), left(0), right(0) {}
-// Constructor por parámetros
+// Constructor por parï¿½metros
 template <class T>
 TreeNode<T>::TreeNode(T val, TreeNode<T> *le, TreeNode<T> *ri)
 	: value(val), left(le), right(ri) {}
@@ -53,19 +53,23 @@ void TreeNode<T>::add(T val) {
         q.pop();
         if (p->left == nullptr) {
             p->left = new TreeNode<T>(val);
+            return;
+        } else {
+            q.push(p->left);
         }
-        else if (p->right == nullptr) {
+        if (p->right == nullptr) {
             p->right = new TreeNode<T>(val);
             return;
+        } else {
+            q.push(p->right);
         }
-        q.push(p->left);
-        q.push(p->right);
     }
 }
+
 /*
 * find(T val)
 *
-* Busca dentro del arbol y revisa la ubicacion donde está ese nodo
+* Busca dentro del arbol y revisa la ubicacion donde estï¿½ ese nodo
 *
 * param T val
 * return true o false
@@ -87,7 +91,7 @@ bool TreeNode<T>::find(T val) {
 * sumTot(T num)
 *
 * Realiza de manera recursiva la suma acumulada
-* dentro del árbol
+* dentro del ï¿½rbol
 *
 * param T val
 * return suma acumulada
@@ -156,7 +160,7 @@ bool BST<T>::empty() const {
 /*
 * add(T val)
 *
-* Añade el valor en el lugar correspondiente
+* Aï¿½ade el valor en el lugar correspondiente
 *
 * param T val
 * @return
